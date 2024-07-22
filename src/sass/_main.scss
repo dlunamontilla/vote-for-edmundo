@@ -67,6 +67,11 @@
             }
         }
 
+        &:nth-of-type(13),
+        &:nth-of-type(23) {
+            pointer-events: none;
+        }
+
 
         img {
             position: absolute;
