@@ -2,7 +2,9 @@
 
 ## Descripción
 
-Este proyecto es una simulación de voto electrónico que utiliza el mismo tarjetón que se usa en las elecciones en Venezuela. Su propósito es educar a los votantes sobre cómo emitir su voto correctamente y proporcionar una herramienta útil en la lucha por un futuro mejor para Venezuela. Al usar esta simulación, los usuarios podrán familiarizarse con el proceso de votación y aprender cómo votar por el candidato correcto, contribuyendo así a un posible cambio en el país.
+Este proyecto es una simulación de voto electrónico que utiliza el mismo tarjetón que se usa en las elecciones en Venezuela. Su propósito es educar a los votantes sobre cómo emitir su voto correctamente y proporcionar una herramienta útil en la lucha por un futuro mejor para Venezuela.
+
+Al usar esta simulación, los usuarios podrán familiarizarse con el proceso de votación y aprender cómo votar por el candidato correcto (Edmundo González), contribuyendo así a un posible cambio en el país.
 
 ## Características
 
@@ -17,13 +19,13 @@ Para ejecutar la simulación localmente, sigue estos pasos:
 1. **Clona el repositorio**:
 
    ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   https://github.com/dlunamontilla/vote-for-edmundo.git
    ```
 
 2. **Navega al directorio del proyecto**:
 
    ```bash
-   cd nombre-del-repositorio
+   vote-for-edmundo
    ```
 
 3. **Instala las dependencias**:
@@ -39,7 +41,7 @@ Para ejecutar la simulación localmente, sigue estos pasos:
    ```
 
 5. **Accede a la aplicación**:
-   Abre tu navegador y ve a `http://localhost:3000` (o el puerto especificado).
+   Abre tu navegador y ve a `http://localhost:5173` (o el puerto especificado).
 
 ## Construcción
 
