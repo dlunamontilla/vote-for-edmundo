@@ -1,7 +1,11 @@
 <script>
     import Cards from "./Layouts/Cards.svelte";
+    import Footer from "./Layouts/Footer.svelte";
 </script>
 
 <main>
-    <Cards />
+    <div class="width">
+        <Cards />
+        <Footer />
+    </div>
 </main>

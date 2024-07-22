@@ -36,3 +36,15 @@ pre {
     white-space: wrap;
     width: 100%
 }
+
+a {
+    $color: saturate($color, 100);
+    $color: darken($color, 20);
+
+    text-decoration: none;
+    color: $color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
