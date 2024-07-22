@@ -20,8 +20,8 @@
         padding: $gap;
 
         @media screen and (max-width: 600px) {
-            padding: $gap / 2;
-            gap: $gap / 2;
+            padding: calc($gap / 2);
+            gap: calc($gap / 2);
         }
     }
 
