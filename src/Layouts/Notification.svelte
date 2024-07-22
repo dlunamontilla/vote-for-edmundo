@@ -11,7 +11,7 @@
                         El voto se ha generado correctamente
                     </h2>
                     <p>
-                        Tome su comprobante y deposítelo en la caja de resguardo {open}
+                        Tome su comprobante y deposítelo en la caja de resguardo
                     </p>
                 </div>
             </div>
