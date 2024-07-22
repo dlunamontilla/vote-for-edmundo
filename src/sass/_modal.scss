@@ -1,0 +1,81 @@
+.modal {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    $min-height: 70px;
+
+    &-container {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        display: flex;
+        background-color: $background;
+
+        animation: 300ms ease fade-in 1 forwards;
+    }
+
+    &__header {
+        min-height: $min-height;
+        background-color: darken(white, 6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+
+        font: {
+            size: 1.2rem;
+        }
+
+        margin: 0;
+        text-align: center;
+
+        &--error {
+            color: red;
+        }
+
+        &--success {
+            color: green;
+        }
+    }
+
+    &__container {
+        flex-grow: 1;
+        background-color: white;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 140px;
+            margin: 0 auto;
+            padding: 4px;
+            object-fit: cover;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 0;
+        min-height: $min-height;
+        background-color: darken(white, 5)
+    }
+}

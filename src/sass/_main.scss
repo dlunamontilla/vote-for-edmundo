@@ -1,0 +1,148 @@
+.card {
+    position: relative;
+    margin: 0 auto;
+    width: $width;
+    max-width: $max-width;
+    height: content;
+    background-color: darken($color, 10);
+    border-radius: 4px;
+
+    &,
+    &__inner {
+        position: relative;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: $gap;
+        background-color: darken(white, 6);
+        padding: $gap;
+
+        @media screen and (max-width: 600px) {
+            padding: $gap / 2;
+            gap: $gap / 2;
+        }
+    }
+
+    &__item {
+        position: relative;
+        min-height: 20px;
+        padding-top: 149%;
+        border: 1px solid darken(white, 15);
+        background-color: white;
+        overflow: hidden;
+        cursor: not-allowed;
+
+        transition: 300ms ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            transition: none;
+            opacity: 1;
+        }
+
+        &:nth-of-type(15),
+        &:nth-of-type(17),
+        &:nth-of-type(27) {
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                animation: 200ms ease-out strong 10 alternate;
+                animation-delay: 3s;
+                z-index: 10;
+                border: 3px solid transparent;
+                pointer-events: none;
+            }
+        }
+
+
+        img {
+            position: absolute;
+            margin: auto;
+            left: -1%;
+            right: 0;
+            top: -1%;
+            bottom: 0;
+            width: 102%;
+            height: 102%;
+
+            pointer-events: none;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 300ms ease;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            &:active {
+                transition: none;
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+.button {
+    background-color: transparent;
+    font: inherit;
+    border: 0;
+    transition: 300ms ease;
+    cursor: pointer;
+
+    &:active {
+        transition: none;
+    }
+
+    &--vote {
+        border: 2px solid darken(white, 30px);
+        color: black;
+        min-width: 100px;
+        border-radius: 5px;
+        min-height: 40px;
+
+        font: {
+            size: 0.9rem;
+        }
+
+        &:hover {
+            background-color: darken(white, 10);
+        }
+
+        &:active {
+            background-color: transparent;
+        }
+    }
+
+    &--close {
+        $initial-color: red;
+        background-color: darken($initial-color, 10);
+        color: white;
+
+        min-width: 100px;
+        min-height: 40px;
+
+        border-radius: 4px;
+
+        &:hover {
+            background-color: $initial-color;
+        }
+
+        &:active {
+            background-color: darken($initial-color, 10);
+        }
+    }
+}

@@ -1,0 +1,38 @@
+:root {
+    background-color: $background;
+
+    font: {
+        family: "Open Sans", sans-serif, arial;
+        size: 17px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+pre {
+    padding: 10px;
+    background-color: rgba(black, 0.3);
+    white-space: wrap;
+    width: 100%
+}
